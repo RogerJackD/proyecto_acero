@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $servername = "localhost";
     $username = "root"; 
-    $password = "988467202r--"; 
+    $password = "mysql114114"; 
     $dbname = "prueeba"; 
 
     try {
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($usuario) {
             if (password_verify($contraseña, $usuario['contraseña'])) {
                 $_SESSION['user_id'] = $usuario['id'];
-                header("Location: dashboard.php"); 
+                header("Location: inicio-secion.php"); 
                 exit();
             } else {
                 // Define el mensaje de error si la contraseña es incorrecta

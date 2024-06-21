@@ -25,7 +25,18 @@ $tareasFinalizadas = obtenerTareas('finalizada');
     <title>Dashboard</title>
 </head>
 <body>
+    
+
+
     <?php include 'header.php'; ?>
+    
+
+    <div class="container">
+    <!-- Título Principal -->
+    <div class="jumbotron mt-5">
+      <h1 class="display-5 text-center">GESTIONADOR DE TAREAS LOS ACEROS</h1>
+    </div>
+  </div>
 
     <div class="container mt-5">
         <div class="d-flex justify-content-between">
@@ -34,7 +45,21 @@ $tareasFinalizadas = obtenerTareas('finalizada');
                 <button type="button" class="btn btn-outline-primary" id="btnPendientes">Pendientes</button>
                 <button type="button" class="btn btn-outline-primary" id="btnEnProceso">En Proceso</button>
                 <button type="button" class="btn btn-outline-primary" id="btnFinalizadas">Finalizadas</button>
+
+                
             </div>
+
+            <div>
+                <!-- Botón para descargar el PDF generado -->
+                <form id="formGenerarPDF" action="pdf/generar_pdf.php" method="post">
+                    <button type="submit" class="btn btn-success">Descargar Informe de Tareas</button>
+                </form>
+            </div>
+
+            
+
+
+
             <div class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar Tarea" aria-label="Buscar" id="buscarTarea">
             </div>

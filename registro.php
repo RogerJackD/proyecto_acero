@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar si el correo electrónico ya está en uso
     $servername = "localhost";
     $username = "root"; 
-    $password = "988467202r--"; 
+    $password = "mysql114114"; 
     $dbname = "prueeba"; 
 
     try {
